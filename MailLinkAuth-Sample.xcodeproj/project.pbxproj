@@ -14,6 +14,8 @@
 		47262A03273E8A9E00631556 /* MailLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47262A01273E8A9E00631556 /* MailLinkViewController.swift */; };
 		47262A04273E8A9E00631556 /* MailLinkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47262A02273E8A9E00631556 /* MailLinkViewController.xib */; };
 		47262A06273E8DB300631556 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47262A05273E8DB300631556 /* GoogleService-Info.plist */; };
+		47262A0A273E98BB00631556 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47262A08273E98BB00631556 /* SuccessViewController.swift */; };
+		47262A0B273E98BB00631556 /* SuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47262A09273E98BB00631556 /* SuccessViewController.xib */; };
 		68DB658CF55465FFBE25E48B /* Pods_MailLinkAuth_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A22F1BAF7E772B76BDA757 /* Pods_MailLinkAuth_Sample.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,9 @@
 		47262A01273E8A9E00631556 /* MailLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailLinkViewController.swift; sourceTree = "<group>"; };
 		47262A02273E8A9E00631556 /* MailLinkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MailLinkViewController.xib; sourceTree = "<group>"; };
 		47262A05273E8DB300631556 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		47262A07273E93CE00631556 /* MailLinkAuth-Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MailLinkAuth-Sample.entitlements"; sourceTree = "<group>"; };
+		47262A08273E98BB00631556 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		47262A09273E98BB00631556 /* SuccessViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuccessViewController.xib; sourceTree = "<group>"; };
 		69A22F1BAF7E772B76BDA757 /* Pods_MailLinkAuth_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MailLinkAuth_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7446EE139764ACF10C8FFAB6 /* Pods-MailLinkAuth-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailLinkAuth-Sample.debug.xcconfig"; path = "Target Support Files/Pods-MailLinkAuth-Sample/Pods-MailLinkAuth-Sample.debug.xcconfig"; sourceTree = "<group>"; };
 		E7ED1589988390E4C25644FA /* Pods-MailLinkAuth-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailLinkAuth-Sample.release.xcconfig"; path = "Target Support Files/Pods-MailLinkAuth-Sample/Pods-MailLinkAuth-Sample.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,10 +71,13 @@
 		472629EA273E8A3A00631556 /* MailLinkAuth-Sample */ = {
 			isa = PBXGroup;
 			children = (
+				47262A07273E93CE00631556 /* MailLinkAuth-Sample.entitlements */,
 				472629EB273E8A3A00631556 /* AppDelegate.swift */,
 				472629ED273E8A3A00631556 /* SceneDelegate.swift */,
 				47262A01273E8A9E00631556 /* MailLinkViewController.swift */,
 				47262A02273E8A9E00631556 /* MailLinkViewController.xib */,
+				47262A08273E98BB00631556 /* SuccessViewController.swift */,
+				47262A09273E98BB00631556 /* SuccessViewController.xib */,
 				472629F4273E8A3C00631556 /* Assets.xcassets */,
 				472629F6273E8A3C00631556 /* LaunchScreen.storyboard */,
 				472629F9273E8A3C00631556 /* Info.plist */,
@@ -156,6 +164,7 @@
 			files = (
 				472629F8273E8A3C00631556 /* LaunchScreen.storyboard in Resources */,
 				47262A06273E8DB300631556 /* GoogleService-Info.plist in Resources */,
+				47262A0B273E98BB00631556 /* SuccessViewController.xib in Resources */,
 				472629F5273E8A3C00631556 /* Assets.xcassets in Resources */,
 				47262A04273E8A9E00631556 /* MailLinkViewController.xib in Resources */,
 			);
@@ -212,6 +221,7 @@
 			files = (
 				47262A03273E8A9E00631556 /* MailLinkViewController.swift in Sources */,
 				472629EC273E8A3A00631556 /* AppDelegate.swift in Sources */,
+				47262A0A273E98BB00631556 /* SuccessViewController.swift in Sources */,
 				472629EE273E8A3A00631556 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +362,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "MailLinkAuth-Sample/MailLinkAuth-Sample.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HAMLUR4PQA;
@@ -380,6 +391,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "MailLinkAuth-Sample/MailLinkAuth-Sample.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HAMLUR4PQA;

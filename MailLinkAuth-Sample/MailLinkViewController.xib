@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MailLinkViewController" customModule="MailLinkAuth_Sample" customModuleProvider="target">
             <connections>
+                <outlet property="mailTextField" destination="xfM-4j-aDR" id="xCg-9P-BWl"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,9 +18,34 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="メールアドレス" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xfM-4j-aDR">
+                    <rect key="frame" x="107" y="344" width="200" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="DSm-Ou-cft"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XE0-E9-XQU">
+                    <rect key="frame" x="184.5" y="428.5" width="45" height="39"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="送信"/>
+                    <connections>
+                        <action selector="didTapSendButton:" destination="-1" eventType="touchUpInside" id="DUS-D4-m9x"/>
+                    </connections>
+                </button>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemOrangeColor"/>
-            <point key="canvasLocation" x="132" y="100"/>
+            <constraints>
+                <constraint firstItem="xfM-4j-aDR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="300" id="CfK-HD-77z"/>
+                <constraint firstItem="xfM-4j-aDR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Hgd-Ig-0d7"/>
+                <constraint firstItem="XE0-E9-XQU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="RAb-pD-GTa"/>
+                <constraint firstItem="XE0-E9-XQU" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ZnQ-BK-opz"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="99.776785714285708"/>
         </view>
     </objects>
     <resources>

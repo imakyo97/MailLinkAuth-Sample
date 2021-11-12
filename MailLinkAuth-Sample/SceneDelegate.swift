@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -18,6 +19,31 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let mailLinkViewController = MailLinkViewController()
         self.window?.rootViewController = mailLinkViewController
         self.window?.makeKeyAndVisible()
+    }
+
+    func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
+        //userActivityプロパティからリンクURLを取得
+        guard let url = userActivity.webpageURL else { return }
+        let link = url.absoluteString
+
+        if Auth.auth().isSignIn(withEmailLink: link) {
+            // 保存していたメールアドレスを取得
+            guard let mail = UserDefaults.standard.value(forKey: "Email") as? String else { return }
+            Auth.auth().signIn(withEmail: mail, link: link) { [weak self] user, error in
+                guard let strongSelf = self else { return }
+                if let error = error {
+                    // ログイン失敗
+                    print("\(error.localizedDescription)")
+                }
+                // ログイン成功
+                let successViewController = SuccessViewController()
+                strongSelf.window?.rootViewController?.present(
+                    successViewController,
+                    animated: true,
+                    completion: nil
+                )
+            }
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
