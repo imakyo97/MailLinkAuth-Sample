@@ -13,6 +13,7 @@
 		472629F8273E8A3C00631556 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 472629F6273E8A3C00631556 /* LaunchScreen.storyboard */; };
 		47262A03273E8A9E00631556 /* MailLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47262A01273E8A9E00631556 /* MailLinkViewController.swift */; };
 		47262A04273E8A9E00631556 /* MailLinkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47262A02273E8A9E00631556 /* MailLinkViewController.xib */; };
+		68DB658CF55465FFBE25E48B /* Pods_MailLinkAuth_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A22F1BAF7E772B76BDA757 /* Pods_MailLinkAuth_Sample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		472629F9273E8A3C00631556 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47262A01273E8A9E00631556 /* MailLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailLinkViewController.swift; sourceTree = "<group>"; };
 		47262A02273E8A9E00631556 /* MailLinkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MailLinkViewController.xib; sourceTree = "<group>"; };
+		69A22F1BAF7E772B76BDA757 /* Pods_MailLinkAuth_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MailLinkAuth_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7446EE139764ACF10C8FFAB6 /* Pods-MailLinkAuth-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailLinkAuth-Sample.debug.xcconfig"; path = "Target Support Files/Pods-MailLinkAuth-Sample/Pods-MailLinkAuth-Sample.debug.xcconfig"; sourceTree = "<group>"; };
+		E7ED1589988390E4C25644FA /* Pods-MailLinkAuth-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailLinkAuth-Sample.release.xcconfig"; path = "Target Support Files/Pods-MailLinkAuth-Sample/Pods-MailLinkAuth-Sample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68DB658CF55465FFBE25E48B /* Pods_MailLinkAuth_Sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				472629EA273E8A3A00631556 /* MailLinkAuth-Sample */,
 				472629E9273E8A3A00631556 /* Products */,
+				87DF9E26C814EFB1F7B3EA82 /* Pods */,
+				D4C9FDCD4509B5FBD2579274 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = "MailLinkAuth-Sample";
 			sourceTree = "<group>";
 		};
+		87DF9E26C814EFB1F7B3EA82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7446EE139764ACF10C8FFAB6 /* Pods-MailLinkAuth-Sample.debug.xcconfig */,
+				E7ED1589988390E4C25644FA /* Pods-MailLinkAuth-Sample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D4C9FDCD4509B5FBD2579274 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69A22F1BAF7E772B76BDA757 /* Pods_MailLinkAuth_Sample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 472629FC273E8A3C00631556 /* Build configuration list for PBXNativeTarget "MailLinkAuth-Sample" */;
 			buildPhases = (
+				61623FF11197404F2C766484 /* [CP] Check Pods Manifest.lock */,
 				472629E4273E8A3A00631556 /* Sources */,
 				472629E5273E8A3A00631556 /* Frameworks */,
 				472629E6273E8A3A00631556 /* Resources */,
+				DB8B9AC0200EE0D6921D07A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		61623FF11197404F2C766484 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MailLinkAuth-Sample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB8B9AC0200EE0D6921D07A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MailLinkAuth-Sample/Pods-MailLinkAuth-Sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MailLinkAuth-Sample/Pods-MailLinkAuth-Sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MailLinkAuth-Sample/Pods-MailLinkAuth-Sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		472629E4273E8A3A00631556 /* Sources */ = {
@@ -276,6 +345,7 @@
 		};
 		472629FD273E8A3C00631556 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7446EE139764ACF10C8FFAB6 /* Pods-MailLinkAuth-Sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -303,6 +373,7 @@
 		};
 		472629FE273E8A3C00631556 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7ED1589988390E4C25644FA /* Pods-MailLinkAuth-Sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
