@@ -13,6 +13,7 @@
 		472629F8273E8A3C00631556 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 472629F6273E8A3C00631556 /* LaunchScreen.storyboard */; };
 		47262A03273E8A9E00631556 /* MailLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47262A01273E8A9E00631556 /* MailLinkViewController.swift */; };
 		47262A04273E8A9E00631556 /* MailLinkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47262A02273E8A9E00631556 /* MailLinkViewController.xib */; };
+		47262A06273E8DB300631556 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 47262A05273E8DB300631556 /* GoogleService-Info.plist */; };
 		68DB658CF55465FFBE25E48B /* Pods_MailLinkAuth_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A22F1BAF7E772B76BDA757 /* Pods_MailLinkAuth_Sample.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		472629F9273E8A3C00631556 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47262A01273E8A9E00631556 /* MailLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailLinkViewController.swift; sourceTree = "<group>"; };
 		47262A02273E8A9E00631556 /* MailLinkViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MailLinkViewController.xib; sourceTree = "<group>"; };
+		47262A05273E8DB300631556 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		69A22F1BAF7E772B76BDA757 /* Pods_MailLinkAuth_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MailLinkAuth_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7446EE139764ACF10C8FFAB6 /* Pods-MailLinkAuth-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailLinkAuth-Sample.debug.xcconfig"; path = "Target Support Files/Pods-MailLinkAuth-Sample/Pods-MailLinkAuth-Sample.debug.xcconfig"; sourceTree = "<group>"; };
 		E7ED1589988390E4C25644FA /* Pods-MailLinkAuth-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailLinkAuth-Sample.release.xcconfig"; path = "Target Support Files/Pods-MailLinkAuth-Sample/Pods-MailLinkAuth-Sample.release.xcconfig"; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 				472629E9273E8A3A00631556 /* Products */,
 				87DF9E26C814EFB1F7B3EA82 /* Pods */,
 				D4C9FDCD4509B5FBD2579274 /* Frameworks */,
+				47262A05273E8DB300631556 /* GoogleService-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,7 +83,6 @@
 				7446EE139764ACF10C8FFAB6 /* Pods-MailLinkAuth-Sample.debug.xcconfig */,
 				E7ED1589988390E4C25644FA /* Pods-MailLinkAuth-Sample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -153,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				472629F8273E8A3C00631556 /* LaunchScreen.storyboard in Resources */,
+				47262A06273E8DB300631556 /* GoogleService-Info.plist in Resources */,
 				472629F5273E8A3C00631556 /* Assets.xcassets in Resources */,
 				47262A04273E8A9E00631556 /* MailLinkViewController.xib in Resources */,
 			);
